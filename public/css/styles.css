@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap'); /*game font*/
+@import url(smScreens.css); /*smallScreens*/
+@import url(mdScreens.css); /*mediumScreens*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    max-width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #FFFF;
+    margin: 125px 75px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#gameText {
+    text-align: center;
+}
+
+#prompt {
+    margin: 75px auto;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #000;
+    color: #FFFF;
+    font-family: 'Press Start 2P', cursive;
+    border: none;
+    caret-color: #FFFF;
+    width: 175px;
+}
+
+#prompt:focus{
+    outline: none;
+}
+
+#gameListOptions {
+    margin: 25px auto;
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    margin: 15px auto;
+    font-size: 18px;
+}
+
+span {
+    opacity: 0;
+    transform: translateX(-5px);
+    padding: 1px;
+}
+
+span.effect {
+    opacity: 1;
+    transform: translateX(0px);
+    padding: 1px;
+}
+
+span.active {
+    opacity: 1;
+    transform: translateX(0px);
+    padding: 1px;
+}
+
+
+/* pre {
+    font-size: 21px;
+} */
+
+/* add a border to the text maybe, make it blink aswell so it has more of a typewrite effect */
