@@ -1,7 +1,24 @@
 
 @media (min-width: 320px) and (max-width: 767px){ /*Small Screens*/
-   #gameText {
-    font-size: 18px;
+   #gameContainer {
+      margin: auto 25px;
    }
 
+   #gameText {
+   font-size: 15px;
+   padding: 5px;
+   }
+
+   #gameTitle {
+      font-size: 5px;
+      
+   }
+
+   #gameVisuals {
+      font-size: 5px;
+   }
+
+   li {
+   font-size: 15px;  
+   }
 }

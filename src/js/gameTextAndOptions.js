@@ -45,35 +45,51 @@
         On arrival you finally see people, not as many as you would normally see in a town but still people! What appears to be the town leader offers to tend to your wounds`,
         makeYourWayTorwardsTown: `You walk torwards the town lights, on arrival you notice that this town doesnt have many people. But thats fine since maybe someone here might be able to give you the answers you are looking for.
         What appears to be the towns leader approaches you, and asks you a lot of things. You are bombarded with questions, until the leader offers to talk inside.`,
-        denyInjuryTreatment: `You deny treatment and die minutes later, GAME OVER!. Play Again?`
-       // acceptInjuryTreatment: // work in progress
+        acceptOfferIfInjured: `The town leader tends to your wounds as you rest. The next day you wake up and it seems that most of your injuries are patched up,
+        the town leader enters the room you are in and says "My name is Emet Elrod the leader of the Town of White Horn Castle, what is yours?"`,
+        acceptOffer: `You sit down on a table and begin to speak with the town leader, he presents himself as a man named Emet Elrod and as the leader of the Town of White Horn Castle.
+        He then asks you for your name...`,
+        denyInjuryTreatment: `You deny treatment and die minutes later, GAME OVER!. Play Again?`,
+        dontKnowIfReadDiary: `Your response: "Im not sure, a few hours ago I woke up in the castle that is nearby in the middle of the night with no memory of myself or what I was doing there.
+        As I was walking around, a mysterious light would appear, also I stumbled upon a locked drawer which contained a diary of a man named Gaston Wells, where he described an attack on the castle. 
+        In the diary he wrote that whoever sees it should go torwards the town nearby in search of answers..." When Emet heard the name of the man in the diary, he made a odd expression on his face,
+        he then responded: "I see the invasion of what is now known as Whitehorn Castle, was close to a century ago. No one has been in the castle other than thiefs and those who wish to see the castle, 
+        so for you to find such a valuable historical piece intact is a great discovery!"`,
+        dontKnow: `Your response: "Im not sure, a few hours ago I woke up in the castle that is nearby in the middle of the night with no memory of myself or what I was doing there.
+        The castle was empty, not a single person was inside but there was a light that would follow me around as I explored the unknown place." Emet had a very doubtful look on his face, I could tell he didnt believe much of what I said.
+        Emet then asked me if I "wanted to know the brief history of the castle and town?"`
+        // work in progress
     }
     // options
     const options = {
-        startOptions: ["Open Door", "Grab Torch", "Go to Window and Look Outside"],
-        doorOpenOptions: ["Go Back Upstairs", "Walk Torwards the Light"],
-        grabTorchOptions: ["Open Door", "Go to Window and Look Outside"], 
-        walkTorwardsWindowOptions: ["Open Door", "Grab Torch"],
-        walkUpstairsOptions: ["Open Door", "Grab Torch", "Go to Window and Look Outside"],
-        walkTorwardsLightOptions: ["Go To Kitchen", "Go Downstairs", "View Town"],
-        walkIntoKitchenOptions: ["Go Downstairs", "View Town"],
-        walkToWindowAndViewTownOptions: ["Go To Kitchen", "Go Downstairs"],
-        walkDownstairsOptions: ["Enter Room One", "Enter Room Two", "Enter Room Three", "Go Back Up"],
-        walkDownOptions: ["Go Down", "View Town"],
-        enterRoomOneOptions: ["Look Around", "Go Back"],
-        enterRoomTwoOptions: ["Proceed Torwards Basement", "Go Back"],
-        enterRoomThreeOptions: ["Explore Room", "Go Back"],
-        exploreStaffQuartersOptions: ["Grab it", "Go Back"],
-        cantProceedTorwardsBasementOptions: ["Go Back"],
-        proceedTorwardsBasementOptions: ["Walk Around Until You Find Something Useful"],
-        walkAroundUntilYouFindSomethingUsefulOptions: ["Follow Light"],
-        followLightOptions: ["Walk into The Woods", "Make Your Way Torwards Town"],
-        walkIntoWoodsOptions: ["Make Your Way Torwards Town", "Fight the Pack"],
-        fightPackOfWolvesOptions: ["Throw Rock at The Pack Leader", "Escape!"],
-        throwRockAndEscapeFromWolvesOptions: ["Make Your Way Torwards Town"],
-        makeYourWayTorwardsTownIfInjuredOptions: ["Accept", "Deny"], // possible ending if you deny
-        makeYourWayTorwardsTownOptions: ["Accept"],
-        denyInjuryTreatmentOptions: ["yes", "no"]
+       
+        startOptions: ["1. Open Door", "2. Grab Torch", "3. Go to Window and Look Outside"], 
+        doorOpenOptions: ["1. Go Back Upstairs", "2. Walk Torwards the Light"],
+        grabTorchOptions: ["1. Open Door", "2. Go to Window and Look Outside"], 
+        walkTorwardsWindowOptions: ["1. Open Door", "2. Grab Torch"],
+        walkUpstairsOptions: ["1. Open Door", "2. Grab Torch", "3. Go to Window and Look Outside"],
+        walkTorwardsLightOptions: ["1. Go To Kitchen", "2. Go Downstairs", "3. View Town"],
+        walkIntoKitchenOptions: ["1. Go Downstairs", "2. View Town"],
+        walkToWindowAndViewTownOptions: ["1. Go To Kitchen", "2. Go Downstairs"],
+        walkDownstairsOptions: ["1. Enter Room One", "2. Enter Room Two", "3. Enter Room Three", "4. Go Back Up"],
+        walkDownOptions: ["1. Go Down", "2. View Town"],
+        enterRoomOneOptions: ["1. Look Around", "2. Go Back"],
+        enterRoomTwoOptions: ["1. Proceed Torwards Basement", "2. Go Back"],
+        enterRoomThreeOptions: ["1. Explore Room", "2. Go Back"],
+        exploreStaffQuartersOptions: ["1. Grab it", "2. Go Back"],
+        cantProceedTorwardsBasementOptions: ["1. Go Back"],
+        proceedTorwardsBasementOptions: ["1. Walk Around Until You Find Something Useful"],
+        walkAroundUntilYouFindSomethingUsefulOptions: ["1. Follow Light"],
+        followLightOptions: ["1. Walk into The Woods", "2. Make Your Way Torwards Town"],
+        walkIntoWoodsOptions: ["1. Make Your Way Torwards Town", "2. Fight the Pack"],
+        fightPackOfWolvesOptions: ["1. Throw Rock at The Pack Leader", "2. Escape!"],
+        throwRockAndEscapeFromWolvesOptions: ["1. Make Your Way Torwards Town"],
+        makeYourWayTorwardsTownIfInjuredOptions: ["1. Accept", "2. Deny"], // possible ending if you deny
+        makeYourWayTorwardsTownOptions: ["1. Accept"],
+        denyInjuryTreatmentOptions: ["1. yes", "2. no"],
+        acceptOfferOptions: ["1. I Dont Know"],
+        dontKnowIfReadDiaryOptions: ["1. Tell me more", "2. Wait what?", "3. Have You Heard of The Man in The Diary?"],
+        dontKnowOptions: ["1. Tell me more"]
     }
 
 export {gameStoryText, options} // exporting these 2 objects

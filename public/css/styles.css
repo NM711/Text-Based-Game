@@ -26,7 +26,6 @@ html {
     justify-content: center;
     align-items: center;
     color: #FFFF;
-    margin: 125px 75px;
     font-family: 'Press Start 2P', cursive;
 }
 
@@ -35,7 +34,7 @@ html {
 }
 
 #prompt {
-    margin: 75px auto;
+    margin: 25px auto;
     padding: 5px;
     border-radius: 5px;
     background-color: #000;
@@ -58,10 +57,9 @@ html {
 li {
     list-style: none;
     margin: 15px auto;
-    font-size: 18px;
 }
 
-span {
+ span {
     opacity: 0;
     transform: translateX(-5px);
     padding: 1px;
@@ -73,15 +71,9 @@ span.effect {
     padding: 1px;
 }
 
-span.active {
-    opacity: 1;
-    transform: translateX(0px);
-    padding: 1px;
+#gameTitle {
+    align-items: center;
+    text-align: center;
 }
-
-
-/* pre {
-    font-size: 21px;
-} */
 
 /* add a border to the text maybe, make it blink aswell so it has more of a typewrite effect */

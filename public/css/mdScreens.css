@@ -1,5 +1,22 @@
 @media (min-width: 768px) {
+    #gameContainer {
+        margin: 0 75px;
+    }
+
     #gameText {
+        font-size: 21px;
+        padding: 25px;
+    }
+
+    #gameVisuals {
+        font-size: 15px;
+    }
+
+    #gameTitle {
+        font-size: 15px;
+    }
+    
+    li {
         font-size: 21px;
     }
 }
