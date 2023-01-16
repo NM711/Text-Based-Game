@@ -187,6 +187,31 @@ const gameTextTitleMobile = `
 ░█▄█░█▀█░░█░░░█░░█▀▀░█▀█░█░█░█▀▄░█░█░░░█░░░█▀█░▀▀█░░█░░█░░░█▀▀
 ░▀░▀░▀░▀░▀▀▀░░▀░░▀▀▀░▀░▀░▀▀▀░▀░▀░▀░▀░░░▀▀▀░▀░▀░▀▀▀░░▀░░▀▀▀░▀▀▀
 `
+
+const woodsAndTown = `
+                                           $$        %%
+                                         $$$$$$    %%%%%%
+                                        $$$$$$$$  %%%%%%%%
+                                        │$$$$$$│  │%%%%%%│
+  the woods                             │      │  │      │
+                                        │      │  │      │
+ &&&&&&&&&&                             │      │  │      │
+&&&&&&&&&&&                             └──────┘  └──────┘
+&&&&&&&&&&       ┌──────┐                      &&&&&&&&
+&&&&&&&&  %%%   │      └──────────────────    &&&&&&&&&&
+&&&&&&&&&  %%%  │                             │        │
+&& │ │ &&   %%% │                     town    │        │
+   │|│       %% │                             │        │
+   │0│        % │       ┌─────┐               └────────┘
+   │ │        % │    ┌──┘     └───────────       &&&&
+   │|│      %%% │    │                     ++   &&&&&&
+   │ │     %%%  │    │                    ++++  │    │
+   └─┘    %%%   │    │                   ++++++ │    │
+       ┌────────┘  ┌─┘                   │++++│ └────┘
+     ┌─┘           │                     │    │
+     │            ┌┘                     │    │
+     └────────────┘                      └────┘
+`
   // end of text visuals
 
-  export {castleDoor, windowOne, lowerFloorThreeDoors, viewTownFromWindow, wolfPackLeader, gameOver, gameTextTitle, gameTextTitleMobile, castleBasement, brightLight} // exporting the textArt to then import into the my.js file
+  export {castleDoor, windowOne, lowerFloorThreeDoors, viewTownFromWindow, wolfPackLeader, gameOver, gameTextTitle, gameTextTitleMobile, castleBasement, brightLight, woodsAndTown} // exporting the textArt to then import into the my.js file

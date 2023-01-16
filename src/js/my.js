@@ -1,18 +1,9 @@
-// created by Nathan.
+// made by Nathan.
 // torch asset is not made by me.
 import {gameStoryText} from "./gameTextAndOptions.js" // importing the gameStoryText and the options objects from the gameTextAndOptions.js file
 import * as gameTextAssets from "./gameTextAssets"
 import * as gameSoundAssets from "./gameSoundAssets"
 import * as gameFunctions from "./conditionalFunctions" // importing all of the game functions from ./conditionalFunctions
-/*
-I might not need any of the above since they are all being imported to the functinos module and the functions module is being imported here
-/<!------------------------------------------------------------------------------------------------------------------------------------------>
-/<!-----------------------------------------------IMPORTANT----------IMPORTANT---------------------------------------------------------------->
-/<!-----------------------------------------------IMPORTANT---------IMPORTANT-------------------------------------------------------->
-/<!-----------------------------------------------IMPORTANT----------IMPORTANT------------------------------------------------------------------>
-/<!-----------------------------------------------IMPORTANT----------IMPORTANT------------------------------------------------------------------->
-/<!------------------------------------------------------------------------------------------------------------------------------------------>
-*/
 
 function typeWriterEffect(text) { // there will be 3 functions with the paramaters of gameText, gameTextVisuals, and gameTitle
     // all the spans are wrapped into a pre element which allows the visual text to be formatted as it is
@@ -125,10 +116,12 @@ function prompFunc(){
                     gameFunctions.gameOutput(gameStoryText.walkAroundUntilYouFindSomethingUseful, "walkAroundUntilYouFindSomethingUsefulOptions", "")
                   }
                   else if (listOptions[0].textContent === "1. Follow Light"){
-                    gameFunctions.gameOutput(gameStoryText.followLight, "followLightOptions", gameTextAssets.brightLight )
+                    gameFunctions.gameOutput(gameStoryText.followLight, "followLightOptions", gameTextAssets.woodsAndTown)
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "play")
                   }
                   else if (listOptions[0].textContent === "1. Walk into The Woods"){
                     gameFunctions.gameOutput(gameStoryText.walkIntoTheWoods, "walkIntoWoodsOptions", gameTextAssets.wolfPackLeader)
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "pauseAndRestart")
                     gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.walkInTheWoods, "play")
                   }
                   else if (listOptions[0].textContent === "1. Throw Rock at The Pack Leader"){
@@ -136,13 +129,23 @@ function prompFunc(){
                   }
                   else if (listOptions[0].textContent === "1. Make Your Way Torwards Town"){
                     gameFunctions.makeYourWayTorwardsTown(gameStoryText.makeYourWayTorwardsTown, "makeYourWayTorwardsTownOptions", "")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "play")
                   }
                   else if (listOptions[0].textContent === "1. yes"){
                     gameFunctions.startGame()
                     gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.inTheCastle, "play")
                   }
                   else if (listOptions[0].textContent === "1. I Dont Know"){
-                  gameFunctions.ifReadDiaryEvent()
+                    gameFunctions.diaryEvents("dontKnowOptions", "dontKnowIfReadDiaryOptions", gameStoryText.dontKnow, gameStoryText.dontKnowIfReadDiary)
+                  }
+                  else if (listOptions[0].textContent === "1. Tell Me More"){
+                    gameFunctions.diaryEvents("castlesBriefHistoryOptions", "castlesBriefHistoryIfReadDiaryOptions", gameStoryText.castlesBriefHistory, gameStoryText.castlesBriefHistory)
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.inTheCastle, "pauseAndRestart")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.briefHistory, "play")
+                  }
+
+                  else if (listOptions[0].textContent === "1. Wait What?"){
+                    gameFunctions.gameOutput(gameStoryText.waitWhat, "waitWhatOptions")
                   }
                   // --------------------------------Outside Castle End---------------------------------------->
 
@@ -156,7 +159,7 @@ function prompFunc(){
                 gameFunctions.grabTorchFunction("grabTorchOptions")
                 }
                 else if (listOptions[1].textContent === "2. Walk Torwards the Light"){
-                gameFunctions.gameOutput(gameStoryText.walkTorwardsLight, "walkTorwardsLightOptions", "")
+                gameFunctions.gameOutput(gameStoryText.walkTorwardsLight, "walkTorwardsLightOptions", gameTextAssets.brightLight)
                 }
                 else if (listOptions[1].textContent === "2. Go to Window and Look Outside"){
                 gameFunctions.gameOutput(gameStoryText.goToWindowAndLookOutside, "walkTorwardsWindowOptions", gameTextAssets.windowOne)
@@ -183,6 +186,7 @@ function prompFunc(){
                 else if (listOptions[1].textContent === "2. Escape!"){
                   // escape from the pack of wolves
                     gameFunctions.gameOutput(gameStoryText.escapeFromWolves, "throwRockAndEscapeFromWolvesOptions", "")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "play")
                 }
                 else if (listOptions[1].textContent === "2. Make Your Way Torwards Town"){
                   //function that determines if the player is injured or not which triggers a different event
@@ -190,6 +194,8 @@ function prompFunc(){
                 }
                 else if (listOptions[1].textContent === "2. Deny"){
                     gameFunctions.gameOutput(gameStoryText.denyInjuryTreatment, "denyInjuryTreatmentOptions", gameTextAssets.gameOver)
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "pauseAndRestart")
+                    gameSoundAssets.gameOverSound()
                 }
                 else if (listOptions[1].textContent === "2. no"){
                     console.log('no selected')

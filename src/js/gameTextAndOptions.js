@@ -57,7 +57,16 @@
         so for you to find such a valuable historical piece intact is a great discovery!"`,
         dontKnow: `Your response: "Im not sure, a few hours ago I woke up in the castle that is nearby in the middle of the night with no memory of myself or what I was doing there.
         The castle was empty, not a single person was inside but there was a light that would follow me around as I explored the unknown place." Emet had a very doubtful look on his face, I could tell he didnt believe much of what I said.
-        Emet then asked me if I "wanted to know the brief history of the castle and town?"`
+        Emet then asked me if I "wanted to know the brief history of the castle and town?"`,
+        castlesBriefHistory: `
+        Emet explained that "White Horn Castle which was once ruled by the White Horn Kingdom was once known as Wuillbirds Castle, 
+        which was ruled under the Wuillbird Kingdom. These two kingdoms were always at war with one another, almost a century ago the White Horns that neighbored them
+        were able to plan a succesful invasion of the castle. After winning they aquired this town and the castle nearby, which is why both inherited the name Whitehorn.
+        But after a few decades passed, something mysterious happened. The King of the White Horns had dissapeared one day without knowing how or why, then shortly after
+        a new king was chosen to rule. The entirety of the Whitehorn Kingdom had dissapeared, which is why this town is only the 'Town of Whitehorn' in name..."`,
+        waitWhat: `Emet once again explained that "The Whitehorns have been unkown of for decades since they simply vanished.
+        There has been rumors from those who have lived in town for decades that some time after the Wuillbird Kingdom fell that, a strange man that simply went by the name Gaston had cursed the Whitehorns, but no one knows if this is true and many believe it to just be a fake rumor."`
+
         // work in progress
     }
     // options
@@ -88,8 +97,11 @@
         makeYourWayTorwardsTownOptions: ["1. Accept"],
         denyInjuryTreatmentOptions: ["1. yes", "2. no"],
         acceptOfferOptions: ["1. I Dont Know"],
-        dontKnowIfReadDiaryOptions: ["1. Tell me more", "2. Wait what?", "3. Have You Heard of The Man in The Diary?"],
-        dontKnowOptions: ["1. Tell me more"]
+        dontKnowIfReadDiaryOptions: ["1. Tell Me More", "2. Wait What?", "3. Have You Heard of The Man in The Diary?"],
+        dontKnowOptions: ["1. Tell Me More"],
+        castlesBriefHistoryOptions: ["1. Wait What?"],
+        castlesBriefHistoryIfReadDiaryOptions: ["1. Wait What?", "2. Have You Heard of The Man in The Diary?"],
+        waitWhatOptions: ["1. I Need Answers"]
     }
 
 export {gameStoryText, options} // exporting these 2 objects

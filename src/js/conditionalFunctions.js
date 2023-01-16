@@ -43,17 +43,21 @@ function exploreRoomAndReadDiary(){
     diary++
 }
 
-function ifReadDiaryEvent(){
+// the following block of code is for the multiple different events such as questions and answers that are triggered if the diary is read or not
+// we take 2 options, 1 for each conditional, and 2 gameText 1 for each conditional
+// for example if diary isnt read then do this instead of that and etc, since i have a few events that are triggered due to the diary being read
+// i have decided to create this function in order to avoid repetition as much as possible
+function diaryEvents(options1, options2, gameText1, gameText2){
     if (diary <= 0){
-        gameText.textContent = gameStoryText.dontKnow
-        updateOptions(listOptions, "dontKnowOptions")
-        console.log('not read')
+        updateOptions(listOptions, options1)
+        gameText.textContent = gameText1
+        console.log(`diary read: ${diary}`)
     }
 
     else if (diary === 1){
-        gameText.textContent = gameStoryText.dontKnowIfReadDiary
-        updateOptions(listOptions, "dontKnowIfReadDiaryOptions")
-        console.log('read')
+        updateOptions(listOptions, options2)
+        gameText.textContent = gameText2
+        console.log(`diary read: ${diary}`)
     }
 }
 
@@ -111,4 +115,4 @@ function updateOptions(listOptions, optionsKey) { // input 2 arguments into the 
      we would get the values of this property and apply them to the list by accessing it directly through the prompt */
 }
 
-export {grabTorchFunction, startGame, gameOutput, fightPackOfWolves, makeYourWayTorwardsTown, acceptOffer, exploreRoomAndReadDiary, ifReadDiaryEvent}
+export {grabTorchFunction, startGame, gameOutput, fightPackOfWolves, makeYourWayTorwardsTown, acceptOffer, exploreRoomAndReadDiary, diaryEvents}

@@ -1,6 +1,9 @@
 const soundTracksAndMusic = {
 inTheCastle: "./public/assets/inTheCastleVersion2.wav",
-walkInTheWoods: "./public/assets/walkInTheWoods.wav"
+outsideTheCastle: "./public/assets/outsideTheCastle.wav",
+walkInTheWoods: "./public/assets/walkInTheWoods.wav",
+gameOver: "./public/assets/gameOverSound.wav",
+briefHistory: "./public/assets/briefHistorySoundtrack.wav"
 }
 
 
@@ -23,7 +26,7 @@ function gameSoundtrack(sound, playOrPauseAndRestart){
     function replayFunc() { // replay soundtrack function
         setTimeout(() => {
             soundtrack.play();
-        }, 3000);
+        }, 0);
     }
     /*In the following on each conditional there is 2 conditionals that have 2 conditionals, the first checks if the soundtrack is being played,
     before replaying it. The second checks if the soundtrack is being played before stopping and lastly restarting it.*/
@@ -58,6 +61,11 @@ function gameSoundtrack(sound, playOrPauseAndRestart){
          console.warn('game soundtrack stopped');
     }
 }
+// this will only run once which is why its in a seperate function
+function gameOverSound(){
+    let gameOverSound = new Audio("./public/assets/gameOverSound.wav");
+    gameOverSound.play()
+}
 
 
-export {soundTracksAndMusic, soundEffects, gameSoundEffects, gameSoundtrack}
+export {soundTracksAndMusic, soundEffects, gameSoundEffects, gameSoundtrack, gameOverSound}
