@@ -212,6 +212,33 @@ const woodsAndTown = `
      │            ┌┘                     │    │
      └────────────┘                      └────┘
 `
+
+const goLeftOrRight = `
+│                                             │
+│                ┌─────────────┐              │
+│               ┌┘++Basement+++└┐             │
+│               │---------------│             │
+│               │++┌─────────┐++│             │
+│               │++│         │++│             │
+│   Left        │++│ .       │++│   Right     │
+│   ◄──         │++│      .  │++│     ──►     │
+│               │++│         │++│             │
+│               │++│ .       │++│             │
+│               │++│      .  │++│             │
+│               │++│         │++│             │
+│               │++│         │++│             │
+│               │++│.        │++│             │
+│               │++│      .  │++│             │
+│               │++│         │++│             │
+│               │++│.      . │++│             │
+│               └──┴─────────┴──┘             │
+│                                             │
+│                                             │
+│                                             │
+│                                             │
+`
   // end of text visuals
 
-  export {castleDoor, windowOne, lowerFloorThreeDoors, viewTownFromWindow, wolfPackLeader, gameOver, gameTextTitle, gameTextTitleMobile, castleBasement, brightLight, woodsAndTown} // exporting the textArt to then import into the my.js file
+  // exporting the textArt to then import into the my.js file
+  export {castleDoor, windowOne, lowerFloorThreeDoors, viewTownFromWindow, wolfPackLeader, gameOver, gameTextTitle, gameTextTitleMobile, castleBasement, brightLight, woodsAndTown, 
+    goLeftOrRight} 

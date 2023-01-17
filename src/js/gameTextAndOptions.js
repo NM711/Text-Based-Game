@@ -62,11 +62,32 @@
         Emet explained that "White Horn Castle which was once ruled by the White Horn Kingdom was once known as Wuillbirds Castle, 
         which was ruled under the Wuillbird Kingdom. These two kingdoms were always at war with one another, almost a century ago the White Horns that neighbored them
         were able to plan a succesful invasion of the castle. After winning they aquired this town and the castle nearby, which is why both inherited the name Whitehorn.
-        But after a few decades passed, something mysterious happened. The King of the White Horns had dissapeared one day without knowing how or why, then shortly after
-        a new king was chosen to rule. The entirety of the Whitehorn Kingdom had dissapeared, which is why this town is only the 'Town of Whitehorn' in name..."`,
-        waitWhat: `Emet once again explained that "The Whitehorns have been unkown of for decades since they simply vanished.
-        There has been rumors from those who have lived in town for decades that some time after the Wuillbird Kingdom fell that, a strange man that simply went by the name Gaston had cursed the Whitehorns, but no one knows if this is true and many believe it to just be a fake rumor."`
-
+        But after a few decades passed, something mysterious happened. The King of the Whitehorns had dissapeared one day without knowing how or why, then shortly after
+        a new king was chosen to rule, many of the main castles that belonged to the Whitehorns had just vanished out of nowhere which essentially brought the kingdom as the whole to an end, since there was no longer anyone to rule the towns and cities. 
+        And also because the Whitehorns were constanly at war with many other Kingdoms which led many of their remaining castles to either be captured, or abandoned in order to make efforts to fortify another, which in the end just didnt work out.
+        This town is one of the many that is no longer ruled by anyone, we rule ourselves and have been at peace for many decades and have even had positive interactions with the neighboring towns and kingdoms, and this is also why the town is only the 'Town of Whitehorn' in name..."`,
+        waitWhat: `Emet once again explained that "The Whitehorns mysteriously vanished.
+        There has been rumors from those who have lived in town for decades that some time after the Wuillbird Kingdom fell that, a strange man that simply went by the name Gaston had cursed the Whitehorns, but no one knows if this is true and many believe it to just be a fake rumor."`,
+        manInDiary: `I had asked Emet about the man in the diary, he assured me "that I dont know him, and that no one in town probably knows him either, but that rumors had circled aroud about how a man that mightve gone by that name had set a curse on the Whitehorns many years ago"`,
+        needAnswers: `I told Emet that either way, that I needed answers. He said that if I wanted I could ask the people who live in the town, but that he highly doubts the rumor is true, or that anyone really knows anything. 
+        Before I left Emets house, he told me that if I needed anything that I could always go back.`,
+        askAround: `After asking around town for hours about any information about the rumor or the man named Gaston, an old lady which seemed to be in here 70s or 80s approached me.
+        She claimed to know about the rumor! She told me that many years ago a man had entered town trying to conduct some sort of curse or ritual, she didnt know what it was exactly but this is how the rumor began.
+        The man began to shout in town, saying that he would set a curse on the Whitehorns, this did not end well for him because the guards heard of this and took it as disrespect against their king and kingdom, 
+        he ended up receiving a harsh punishment for this and was sent to the castles dungeon. After that no one heard from him, the lady then said that if I wanted to know more that I might need to go back to the castle and into the dungeon, 
+        she also said that no one really goes to the castle normally since many believe it to be haunted.`,
+        backAtTheCastle: `You are back inside the castle, you make your way torwards the basement and instead of taking the route that takes you to the castles exterior you take another hallwaym
+        you can now go in one of the following 2 directions, left or right what do you do?`,
+        goLeft: `You go left, after walking you find many rooms which seem to have been part of the dungeon, you now need to look through them in order to find clues...`,
+        goRight: `You go right, after walking for a while you find a dead end, there is nothing here!`,
+        lookThroughRooms: `After searching through each room, you find something interesting. One of the rooms has a few candles lit inside it no one is inside.`,
+        enterRoom: `You enter the room and the light appears once more, it begins to quickly come close to you and before you can react something happens. 
+        You can now remember everything, your name is Gaston Wells the man who wrote the diary and the one who cursed the Whitehorns.
+        Filled with anger and hatred against the ones who took your home, you decided to spend years learning how to set a curse powerful enough to make them dissapear.
+        Which you managed to accomplish at the end of your life. Yes at the end of your life because in order for the curse to even take effect you needed to also sacrifice your life force.
+        You dont feel fullfilled for accomplishing your goal or even sad, after all you were never real in the first place you arent alive, you are just a ghost who awoke and began to wander around convincing everyone else you were real...
+        `,
+        endGame: `Thanks For Playing!`
         // work in progress
     }
     // options
@@ -97,11 +118,18 @@
         makeYourWayTorwardsTownOptions: ["1. Accept"],
         denyInjuryTreatmentOptions: ["1. yes", "2. no"],
         acceptOfferOptions: ["1. I Dont Know"],
-        dontKnowIfReadDiaryOptions: ["1. Tell Me More", "2. Wait What?", "3. Have You Heard of The Man in The Diary?"],
+        dontKnowIfReadDiaryOptions: ["1. Tell Me More", "2. Have You Heard of The Man in The Diary?"],
         dontKnowOptions: ["1. Tell Me More"],
         castlesBriefHistoryOptions: ["1. Wait What?"],
-        castlesBriefHistoryIfReadDiaryOptions: ["1. Wait What?", "2. Have You Heard of The Man in The Diary?"],
-        waitWhatOptions: ["1. I Need Answers"]
+        castlesBriefHistoryIfReadDiaryOptions: ["1. Tell Me More", "2. Have You Heard of The Man in The Diary?", "3. Wait What?"],
+        waitWhatOptions: ["1. I Need Answers"],
+        needAnswersOptions: ["1. Ask Around"],
+        askAroundOptions: ["1. Go Back To Castle"],
+        backAtTheCastleOptions: ["1. Go Left", "2. Go Right"],
+        goRightOptions: ["1. Go Left"],
+        goLeftOptions: ["1. Look Through The Rooms"],
+        lookThroughRoomsOptions: ["1. Enter Room"],
+        enterRoomOptions: ["1. End Game"]
     }
 
 export {gameStoryText, options} // exporting these 2 objects

@@ -2,8 +2,10 @@ const soundTracksAndMusic = {
 inTheCastle: "./public/assets/inTheCastleVersion2.wav",
 outsideTheCastle: "./public/assets/outsideTheCastle.wav",
 walkInTheWoods: "./public/assets/walkInTheWoods.wav",
-gameOver: "./public/assets/gameOverSound.wav",
-briefHistory: "./public/assets/briefHistorySoundtrack.wav"
+gameOver: "./public/assets/gameOverSound.mp3",
+briefHistory: "./public/assets/briefHistorySoundtrack.mp3",
+backInCastle: "./public/assets/backInCastle.wav",
+gameFinale: "./public/assets/gameFinale.wav"
 }
 
 
@@ -63,7 +65,7 @@ function gameSoundtrack(sound, playOrPauseAndRestart){
 }
 // this will only run once which is why its in a seperate function
 function gameOverSound(){
-    let gameOverSound = new Audio("./public/assets/gameOverSound.wav");
+    let gameOverSound = new Audio(soundTracksAndMusic.gameOver);
     gameOverSound.play()
 }
 

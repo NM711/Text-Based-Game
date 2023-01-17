@@ -1,4 +1,3 @@
-// made by Nathan.
 // torch asset is not made by me.
 import {gameStoryText} from "./gameTextAndOptions.js" // importing the gameStoryText and the options objects from the gameTextAndOptions.js file
 import * as gameTextAssets from "./gameTextAssets"
@@ -110,7 +109,6 @@ function prompFunc(){
                   }
 
 
-
                   // --------------------------------Outside Castle---------------------------------------->
                   else if (listOptions[0].textContent === "1. Walk Around Until You Find Something Useful"){
                     gameFunctions.gameOutput(gameStoryText.walkAroundUntilYouFindSomethingUseful, "walkAroundUntilYouFindSomethingUsefulOptions", "")
@@ -145,11 +143,38 @@ function prompFunc(){
                   }
 
                   else if (listOptions[0].textContent === "1. Wait What?"){
-                    gameFunctions.gameOutput(gameStoryText.waitWhat, "waitWhatOptions")
+                    gameFunctions.gameOutput(gameStoryText.waitWhat, "waitWhatOptions", "")
+                  }
+                  else if (listOptions[0].textContent === "1. I Need Answers"){
+                    gameFunctions.gameOutput(gameStoryText.needAnswers, "needAnswersOptions", "")
+                  }
+                  else if (listOptions[0].textContent === "1. Ask Around"){
+                    gameFunctions.gameOutput(gameStoryText.askAround, "askAroundOptions", "")
                   }
                   // --------------------------------Outside Castle End---------------------------------------->
 
-
+                  // --------------------------------Back Inside The Castle------------------------------------>
+                  else if (listOptions[0].textContent === "1. Go Back To Castle"){
+                    gameFunctions.gameOutput(gameStoryText.backAtTheCastle, "backAtTheCastleOptions", gameTextAssets.goLeftOrRight)
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.briefHistory, "pauseAndReplay")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.backInCastle, "play")
+                  }
+                  else if (listOptions[0].textContent === "1. Go Left"){
+                    gameFunctions.gameOutput(gameStoryText.goLeft, "goLeftOptions", "")
+                  }
+                  else if (listOptions[0].textContent === "1. Look Through The Rooms"){
+                    gameFunctions.gameOutput(gameStoryText.lookThroughRooms, "lookThroughRoomsOptions", "")
+                  }
+                  else if (listOptions[0].textContent === "1. Enter Room"){
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.backInCastle, "pauseAndRestart")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.gameFinale, "play")
+                    gameFunctions.gameOutput(gameStoryText.enterRoom, "enterRoomOptions", "")
+                  }
+                  else if (listOptions[0].textContent === "1. End Game"){
+                    gameFunctions.gameOutput(gameStoryText.endGame, "denyInjuryTreatmentOptions", "")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.gameFinale, "pauseAndRestart")
+                    gameSoundAssets.gameOverSound()
+                  }
                 }
                 break
 
@@ -200,7 +225,15 @@ function prompFunc(){
                 else if (listOptions[1].textContent === "2. no"){
                     console.log('no selected')
                 }
+                else if (listOptions[1].textContent === "2. Have You Heard of The Man in The Diary?"){
+                  gameFunctions.gameOutput(gameStoryText.manInDiary, "dontKnowOptions", "")
+                }
                  // --------------------------------Outside Castle End---------------------------------------->
+
+                 // --------------------------------Back Inside The Castle------------------------------------>
+                else if (listOptions[1].textContent === "2. Go Right"){
+                  gameFunctions.gameOutput(gameStoryText.goRight, "goRightOptions", "")
+                }
              }
 
                 break
@@ -215,6 +248,9 @@ function prompFunc(){
                 }
                 else if (listOptions[2].textContent === "3. Enter Room Three"){
                     gameFunctions.gameOutput(gameStoryText.enterRoomThree, "enterRoomThreeOptions", "")
+                }
+                else if (listOptions[2].textContent === "3. Wait What?"){
+                  gameFunctions.gameOutput(gameStoryText.waitWhat, "waitWhatOptions", "")
                 }
             }
                 break
