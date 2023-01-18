@@ -1,5 +1,5 @@
 const soundTracksAndMusic = {
-inTheCastle: "./public/assets/inTheCastleVersion2.mp3",
+inTheCastle: "./public/assets/inTheCastle.mp3", // updated version
 outsideTheCastle: "./public/assets/outsideTheCastle.mp3",
 walkInTheWoods: "./public/assets/walkInTheWoods.mp3",
 gameOver: "./public/assets/gameOverSound.mp3",
@@ -28,7 +28,7 @@ function gameSoundtrack(sound, playOrPauseAndRestart){
     function replayFunc() { // replay soundtrack function
         setTimeout(() => {
             soundtrack.play();
-        }, 0);
+        }, 5000);
     }
     /*In the following on each conditional there is 2 conditionals that have 2 conditionals, the first checks if the soundtrack is being played,
     before replaying it. The second checks if the soundtrack is being played before stopping and lastly restarting it.*/

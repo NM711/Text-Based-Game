@@ -149,6 +149,8 @@ function prompFunc(){
                     gameFunctions.gameOutput(gameStoryText.needAnswers, "needAnswersOptions", "")
                   }
                   else if (listOptions[0].textContent === "1. Ask Around"){
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.briefHistory, "pauseAndRestart")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "play")
                     gameFunctions.gameOutput(gameStoryText.askAround, "askAroundOptions", "")
                   }
                   // --------------------------------Outside Castle End---------------------------------------->
@@ -156,7 +158,7 @@ function prompFunc(){
                   // --------------------------------Back Inside The Castle------------------------------------>
                   else if (listOptions[0].textContent === "1. Go Back To Castle"){
                     gameFunctions.gameOutput(gameStoryText.backAtTheCastle, "backAtTheCastleOptions", gameTextAssets.goLeftOrRight)
-                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.briefHistory, "pauseAndReplay")
+                    gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "pauseAndRestart")
                     gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.backInCastle, "play")
                   }
                   else if (listOptions[0].textContent === "1. Go Left"){
@@ -227,6 +229,11 @@ function prompFunc(){
                 }
                 else if (listOptions[1].textContent === "2. Have You Heard of The Man in The Diary?"){
                   gameFunctions.gameOutput(gameStoryText.manInDiary, "dontKnowOptions", "")
+                }
+                else if (listOptions[1].textContent === "2. Walk Around Town"){
+                  gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.briefHistory, "pauseAndRestart")
+                  gameSoundAssets.gameSoundtrack(gameSoundAssets.soundTracksAndMusic.outsideTheCastle, "play")
+                  gameFunctions.gameOutput(gameStoryText.walkAroundTown, "walkAroundTownOptions", gameTextAssets.snowman)
                 }
                  // --------------------------------Outside Castle End---------------------------------------->
 

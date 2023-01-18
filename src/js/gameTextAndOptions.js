@@ -77,6 +77,8 @@
         The man began to shout in town, saying that he would set a curse on the Whitehorns, but this did not end well for him because the guards heard of this and took it as disrespect against their king and Kingdom.
         He ended up receiving a harsh punishment for this and was sent to the castles dungeon. After that no one heard from him." the lady then said that "If you want to know more than you might need to go back to the castle and into the dungeon."
         She then said that no one goes to The Castle because many believe it to be haunted.`,
+        walkAroundTown: `As you walk around town, you notice this village has a very peaceful atmosphere even in the middle of the winter. 
+        You see the lights, people coming back into town with firewood, and wait... Snowmen?`,
         backAtTheCastle: `You are back inside the castle, you make your way toward the basement and instead of taking the route that takes you to the castle's exterior you take another hallway.
         You can now go in one of the following two directions, left or right what do you do?`,
         goLeft: `You go left, and after walking for some time, you find many rooms which seem to have been part of the dungeon. You now need to look through them to find clues...`,
@@ -124,7 +126,8 @@
         castlesBriefHistoryOptions: ["1. Wait What?"],
         castlesBriefHistoryIfReadDiaryOptions: ["1. Tell Me More", "2. Have You Heard of The Man in The Diary?", "3. Wait What?"],
         waitWhatOptions: ["1. I Need Answers"],
-        needAnswersOptions: ["1. Ask Around"],
+        needAnswersOptions: ["1. Ask Around", "2. Walk Around Town"],
+        walkAroundTownOptions: ["1. Ask Around"],
         askAroundOptions: ["1. Go Back To Castle"],
         backAtTheCastleOptions: ["1. Go Left", "2. Go Right"],
         goRightOptions: ["1. Go Left"],
