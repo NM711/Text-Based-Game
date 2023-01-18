@@ -84,10 +84,10 @@
         enterRoom: `You enter the room and the light appears once more, it begins to quickly come close to you and before you can react something happens. 
         You can now remember everything, your name is Gaston Wells the man who wrote the diary and the one who cursed the Whitehorns.
         Filled with anger and hatred against the ones who took your home, you decided to spend years learning how to set a curse powerful enough to make them dissapear.
-        Which you managed to accomplish at the end of your life. Yes at the end of your life because in order for the curse to even take effect you needed to also sacrifice your life force.
-        You dont feel fullfilled for accomplishing your goal or even sad, after all you were never real in the first place you arent alive, you are just a ghost who awoke and began to wander around convincing everyone else you were real...
-        `,
-        endGame: `Thanks For Playing!`
+        Which you managed to accomplish at the end of your life. In order for the curse to even take effect you needed to also sacrifice your life force.
+        You dont feel fullfilled for accomplishing your goal or even sad, after all you were never real in the first place, you are just a ghost who suddenly awoke from a deep slumber
+        who also began to act like you were alive...`,
+        endGame: `Thanks For Playing! Would You Like To Play Again?`
         // work in progress
     }
     // options

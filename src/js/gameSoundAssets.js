@@ -1,11 +1,11 @@
 const soundTracksAndMusic = {
-inTheCastle: "./public/assets/inTheCastleVersion2.wav",
-outsideTheCastle: "./public/assets/outsideTheCastle.wav",
-walkInTheWoods: "./public/assets/walkInTheWoods.wav",
+inTheCastle: "./public/assets/inTheCastleVersion2.mp3",
+outsideTheCastle: "./public/assets/outsideTheCastle.mp3",
+walkInTheWoods: "./public/assets/walkInTheWoods.mp3",
 gameOver: "./public/assets/gameOverSound.mp3",
 briefHistory: "./public/assets/briefHistorySoundtrack.mp3",
-backInCastle: "./public/assets/backInCastle.wav",
-gameFinale: "./public/assets/gameFinale.wav"
+backInCastle: "./public/assets/backInCastle.mp3",
+gameFinale: "./public/assets/gameFinale.mp3"
 }
 
 
